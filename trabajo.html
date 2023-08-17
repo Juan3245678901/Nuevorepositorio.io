@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Cifrado y Descifrado César</title>
+    <link rel="stylesheet" href="Trabajo.css">
+</head>
+<body>
+    <div class="shiftAmount">
+        <label for="shiftAmount">Desplazamiento:</label>
+        <input type="number" id="shiftAmount" min="1" max="25" value="1" required>
+
+
+    </div>
+    <div class="calculator-container">
+        <h1>Cifrado</h1>
+        <div class="calculator">
+            <label for="input">Mensaje:</label>
+            <input type="text" id="input" placeholder="Ingresa un mensaje" required>
+            <button id="encryptButton" onclick="cipherText()">Cifrar</button>
+            <label for="output">Resultado:</label>
+            <input disabled id="output">
+        </div>
+    </div>
+    <div class="calculator-container">
+        <h1>Descifrado </h1>
+        <div class="calculator">
+            <label for="inpu">Mensaje:</label>
+            <input type="text" id="inpu" placeholder="Ingresa un mensaje" required>
+            <button id="decryptButton" onclick="decipherText()">Descifrar</button>
+            <label for="output">Resultado:</label>
+            <input disabled id="outpu">
+        </div>
+    </div>
+
+    <script src="trabajo.js"></script>
+</body>
+</html>
+
+
